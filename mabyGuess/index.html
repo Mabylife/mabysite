@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+ <title>Number Gussing</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="overlay" class="main overlay" style="visibility: hidden">
+		<h1 id="result" style="color: green"></h1>
+		<h2 style="color: white">The answer is <strong id="realAnswer">5288</strong></h2>
+		<p class="tries" style="color: white">You tried <strong id="tries" style="color: white"></strong> times</p>
+	</div>
+	<div class="main">
+		<div class="right">
+			<div class="numPad">
+				<button class="numKey" onclick="number(1)">1</button>
+				<button class="numKey" onclick="number(2)">2</button>
+				<button class="numKey" onclick="number(3)">3</button>
+				<button class="numKey" onclick="number(4)">4</button>
+				<button class="numKey" onclick="number(5)">5</button>
+				<button class="numKey" onclick="number(6)">6</button>
+				<button class="numKey" onclick="number(7)">7</button>
+				<button class="numKey" onclick="number(8)">8</button>
+				<button class="numKey" onclick="number(9)">9</button>
+				<button class="numKey delKey" onclick="del()">Del</button>
+				<button class="numKey" onclick="number(0)">0</button>
+				<button class="numKey entKey" onclick="enter()">Enter</button>
+			</div>
+		</div>
+		<div class="left">
+			<div class="topLeft">
+				<div class="outCon">
+					<div class="output" id="output">
+					</div>
+				</div>
+			</div>
+			<div class="bottomLeft">
+				<div class="ansCon">
+					<button class="ans" id="ans1" onclick="ans(1)"> </button>
+					<button class="ans" id="ans2" onclick="ans(2)"> </button>
+					<button class="ans" id="ans3" onclick="ans(3)"> </button>
+					<button class="ans" id="ans4" onclick="ans(4)"> </button>
+				</div>
+			</div>
+		</div>
+	</div> 
+ <script src="script.js"></script>
+ </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ touch-action: manipulation;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ user-select:none; /* standard syntax */
+ -webkit-user-select:none; /* for Chrome、Safari */
+ -moz-user-select:none;  /* for Mozilla、Firefox */
+}
+
+body {
+display: flex;
+}
+
+.main {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+border-radius: 20px;
+display: flex;
+width: 400px;
+height: 267px;
+border: solid black 3px;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.overlay {
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+z-index: 69;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+display: flex;
+height: 90%;
+width: 45%;
+order: 1;
+justify-content: center;
+align-items: center;
+border-left: solid black 2px;
+}
+
+.left {
+display: flex;
+height: 90%;
+width: 55%;
+order: -1;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 8px;
+}
+
+.topLeft {
+order: -1;
+width: 90%;
+height: 60%;
+border: solid black 2px;
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bottomLeft {
+order: 1;
+width: 100%;
+height: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.numPad {
+display: flex;
+height: 100%;
+width: 90%;
+justify-content: space-between;
+align-items: center;
+gap: 5px;
+flex-wrap: wrap;
+}
+
+.numKey {
+font-size: 90%;
+color: black;
+background-color: white;
+border: solid 2px black;
+height: 22%;
+width: 30%;
+margin: 0px;
+border-radius: 15px;
+}
+
+.ansCon {
+display: flex;
+height: 100%;
+width: 90%;
+justify-content: space-around;
+align-items: center;
+flex-wrap: nowrap;
+gap: 5px;
+}
+
+.ans {
+font-size: 150%;
+background-color: white;
+border: solid black 2px;
+height: 100%;
+width: 25%;
+color: black;
+border-radius: 15px;
+}
+
+
+.outCon {
+display: flex;
+width: 90%;
+height: 130px;
+padding-top: 5px;
+}
+
+.output {
+font-size: 86%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: start;
+align-items: start;
+gap: 10px;
+}
+
+#result {
+font-size: 70px;
+}
+
+
+
+
